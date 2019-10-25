@@ -15,12 +15,10 @@
 </div>
 
 <div class="bar">
-    <div class="level ninety">
+    <div class="level eighty">
 			80%
 	</div>
 </div>
-
-
 
 .bar {
 	height:20px;
@@ -36,14 +34,14 @@
     width:80%;
 }
 
-.ninety.start{
+.eighty.start {
 	width: 0px;
 	background: #aae0aa;
-	-webkit-animation: ninety 2s ease-out forwards;
-	   -moz-animation: ninety 2s ease-out forwards;
-	    -ms-animation: ninety 2s ease-out forwards;
-	     -o-animation: ninety 2s ease-out forwards;
-	        animation: ninety 2s ease-out forwards;
+	-webkit-animation: eighty 2s ease-out forwards;
+	   -moz-animation: eighty 2s ease-out forwards;
+	    -ms-animation: eighty 2s ease-out forwards;
+	     -o-animation: eighty 2s ease-out forwards;
+	        animation: eighty 2s ease-out forwards;
 }
 
 @-moz-keyframes eighty {
@@ -56,7 +54,7 @@
     }
 }
 
-@-webkit-keyframes ninety {
+@-webkit-keyframes eighty {
 	0% {
 	    width: 0px;
 	}
@@ -65,7 +63,6 @@
 	    width: 80%;
 	}
 }
-
 
 var $elem = $('.bar .level');
 var in_view = new Waypoint.Inview({
@@ -77,3 +74,4 @@ var in_view = new Waypoint.Inview({
         $elem.removeClass('start');
     }
 });
+
